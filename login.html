@@ -1,0 +1,112 @@
+<!--<form>
+  <label>Select Date:</label>
+  <input type="date"><br>
+  <label>Choose Color:</label>
+  <input type="color"><br>
+  <label>Upload File:</label>
+  <input type="file"><br>
+</form>
+
+<form action="/submit" method="post">
+  <label>Name:</label>
+  <input type="text" name="name"><br>
+  <label>Gender:</label>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female<br>
+  <label>Country:</label>
+  <select name="country">
+    <option value="us">USA</option>
+    <option value="in">India</option>
+  </select><br>
+  <input type="submit" value="Submit">
+</form>-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Form</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-card {
+      background: white;
+      padding: 25px;
+      width: 320px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+
+    .success {
+      color: green;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-card">
+
+    <p id="successing" class="success"></p>
+
+    <form action="https://chatgpt.com/c/697b6e59-4a90-8320-9815-9c1b23c2df55" method="post" id="loginForm">
+
+      <label>Email</label>
+      <input type="email" id="email" required>
+      <small class="error" id="emailError"></small>
+
+      <label>Password</label>
+      <input type="password" id="password" required>
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Login</button>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
